@@ -31,7 +31,7 @@ The Ansible container has mapped some extra files, present on this repository:
 First, we start the system with the Ansible container + 1 server instance:
 
 ```bash
-$ docker-compose run ansible bash
+$ docker-compose run ansible /bin/bash
 ```
 
 This command will build the server image based on the `Dockerfile` contained on this repository. This image basically generates a clean container with SSHD installed and configured to receive connections. After the image is created, both containers are started and a console to Ansible container is open.
